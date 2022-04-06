@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: consul-demo
+#  profiles:
+#    active: dev
+  cloud:
+    consul:
+      config:
+        fail-fast: true
+  config:
+    import: consul:localhost:8500
